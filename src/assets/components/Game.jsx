@@ -8,7 +8,7 @@ const Game = ({
     letters,
     guessedLetters,
     wrongLetters,
-    gueses,
+    guesses,
     score
   }) => {
 
@@ -32,7 +32,7 @@ const Game = ({
         Dica sobre a Palavra :
         <span> {pickedCategory}</span>
       </h3>
-        <p>Você ainda tem {gueses} tentativa(s)</p>
+        <p>Você ainda tem {guesses} tentativa(s)</p>
       <div className="wordContainer">
         {letters.map((letter,i)=>(
           guessedLetters.includes(letter) ? (
