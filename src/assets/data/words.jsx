@@ -1,5 +1,5 @@
 export const wordsList = {
-    carro: ['Motor', 'Porta','Capô', 'Pneu', 'Volante'],
+    carro: ['Motor', 'Marcha','Capô', 'Pneu', 'Volante'],
     fruta: ['Banana', 'Maçã', 'Pêra', 'Mamão', 'Laranja'],
     corpo: ['Braço', 'Perna','Cérebro', 'Pescoço','Olhos'],
     computação: ['Mouse','Teclado','Monitor','Gabinete', 'Processador'],
