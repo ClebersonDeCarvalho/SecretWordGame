@@ -22,6 +22,11 @@ h1{
     font-family: "Rubik Vinyl", serif;
 }
 
+h3{
+    color: white;
+    font-family: "Bebas Neue", serif;
+}
+
 p{
     margin-bottom: 2em;
     color: yellow; 
@@ -31,7 +36,7 @@ p{
 span{
     color: yellow;
     font-family: "Roboto", serif;
-    font-weight: 400;    
+    font-weight: bold;    
 }
 
 button {
