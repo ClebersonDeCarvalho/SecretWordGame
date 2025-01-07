@@ -36,25 +36,23 @@ function App() {
   const [score,setScore] = useState(0)
 
   //Set the picked word and category
-  const pickWordAndCategory = ()=>{
+  const pickWordAndCategory = useCallback(()=>{
 
     //pick a random category
     const categories = Object.keys(words)
     const category = categories[Math.floor(Math.random()*Object.keys(categories).length)]
 
-    console.log(category)
-
     //pick a random word
     const word = words[category][Math.floor(Math.random()*words[category].length)]
 
-    console.log(word)
-
     return{word, category}
-  }
+    
+  },[words])
 
   //Start Secret World game
-  const startGame = ()=>{
+  const startGame = useCallback(()=>{
 
+    clearLetterStates()
     //Start Secret World
     //picked word and category
     const {word,category} = pickWordAndCategory()
@@ -65,16 +63,13 @@ function App() {
     //Normalizing uppercase letters to lowercase
     wordLetters= wordLetters.map((letter)=>letter.toLowerCase())
 
-    console.log(word,category)
-    console.log(wordLetters)
-
     //Fill states
     setpickedWord(word)
     setpickedCategory(category)
     setLetters(wordLetters)
 
     setGameStage(stages[1].name)
-  }
+  },[pickWordAndCategory])
 
   //process the letters input
   const verifyLetter = (letter)=>{
@@ -108,6 +103,7 @@ function App() {
     setWrongLetters([])
   }
 
+  //check if guesses ended
   useEffect(()=>{
     if(guesses <= 0){
       //reset all game
@@ -117,7 +113,24 @@ function App() {
       setGameStage(stages[2].name)
     }
 
-  },[guesses]); //
+  },[guesses]); 
+  
+  //check win conditions
+
+  useEffect(()=>{
+
+    const uniqueLetters=[...new Set(letters)]
+    
+    //win conditions
+    if(guessedLetters.length===uniqueLetters.length){
+      //add score
+      setScore((actualScore)=>actualScore+=100)
+
+      //reset game, new word
+      startGame();
+    }
+
+  },[guessedLetters,letters,startGame]);
 
   //restart the game
   const retry = ()=>{
@@ -143,11 +156,7 @@ function App() {
           guesses={guesses}
           score={score}
           />)} 
-<<<<<<< HEAD
-        {gameStage === 'end' && <GameOver retry={retry}/>} 
-=======
         {gameStage === 'end' && <GameOver retry={retry} score={score}/>} 
->>>>>>> 7bff240 (Finalizando tela de GameOver)
       </div>
       
     </>
