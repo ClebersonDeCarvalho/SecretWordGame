@@ -23,10 +23,8 @@ const Game = ({
     }
 
   return (
+    
     <div className="game">
-      <p className="points">
-        <span>Pontuação: {score}</span>
-      </p>
       <h1>Adivinhe a palavra:</h1>
       <h3 className="tip">
         Dica sobre a Palavra :
@@ -61,11 +59,13 @@ const Game = ({
         </form>
       </div>
       <div className="wrongLetterContainer">
-        <p>Letras já utilizadas:</p>
-        {wrongLetters.map((letter,i)=>
+        <p>Letras já utilizadas: {wrongLetters.map((letter,i)=>
           <span key={i} >{letter}, </span>
-        )}
+        )}</p>
       </div>
+      <p className="points">
+        <span>Pontuação: {score}</span>
+      </p>
     </div>
   )
 }
