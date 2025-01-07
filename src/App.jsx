@@ -143,7 +143,11 @@ function App() {
           guesses={guesses}
           score={score}
           />)} 
+<<<<<<< HEAD
         {gameStage === 'end' && <GameOver retry={retry}/>} 
+=======
+        {gameStage === 'end' && <GameOver retry={retry} score={score}/>} 
+>>>>>>> 7bff240 (Finalizando tela de GameOver)
       </div>
       
     </>
