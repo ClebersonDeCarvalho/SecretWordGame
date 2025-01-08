@@ -1,4 +1,4 @@
-# SecretWord
+# Secret Word
 ## Jogo de Palavras em React
 
 Bem-vindo ao Jogo de Palavras! Este jogo foi desenvolvido em React e tem como objetivo desafiar seu conhecimento de palavras e temas. Teste suas habilidades de adivinhação e veja quantos pontos você consegue acumular!
