@@ -33,7 +33,7 @@ Bem-vindo ao Jogo de Palavras! Este jogo foi desenvolvido em React e tem como ob
 ![Tela do Jogo](./public/Game.png)
 
 ### Tela de Game Over
-![Tela de Game Over](./public/Gameover.png)
+![Tela de Game Over](./public/GameOver.png)
 
 ## Sobre este Projeto
 Este projeto foi realizado como parte do desenvolvimento de um curso completo de React na Udemy com o professor Matheus Battisti.
