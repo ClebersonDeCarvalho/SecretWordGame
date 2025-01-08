@@ -1,4 +1,5 @@
-# Jogo de Palavras em React
+# SECRETWORD
+## Jogo de Palavras em React
 
 Bem-vindo ao Jogo de Palavras! Este jogo foi desenvolvido em React e tem como objetivo desafiar seu conhecimento de palavras e temas. Teste suas habilidades de adivinhação e veja quantos pontos você consegue acumular!
 
@@ -36,4 +37,4 @@ Bem-vindo ao Jogo de Palavras! Este jogo foi desenvolvido em React e tem como ob
 ![Tela de Game Over](./public/GameOver.png)
 
 ## Sobre este Projeto
-Este projeto foi realizado como parte do desenvolvimento de um curso completo de React na Udemy com o professor Matheus Battisti.
+Este projeto foi realizado como parte do desenvolvimento de um curso completo de React na Udemy com o professor Matheus Battisti ![GitHub](https://github.com/matheusbattisti)
