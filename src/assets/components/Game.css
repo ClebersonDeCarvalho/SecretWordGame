@@ -4,6 +4,7 @@
 
 .points span{
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .tip span{
@@ -45,4 +46,8 @@
     font-size: 2em;
     text-align: center;
     margin-right: 1em;
+}
+
+.tip span {
+    text-transform: uppercase;
 }

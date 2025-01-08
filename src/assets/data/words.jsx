@@ -13,5 +13,15 @@ export const wordsList = {
     instrumento: ['Piano', 'Guitarra', 'Violino', 'Bateria', 'Flauta'],
     filme: ['Ação', 'Comédia', 'Drama', 'Terror', 'Ficção Científica'],
     tecnologia: ['Smartphone', 'Tablet', 'Laptop', 'Drone', 'Impressora'],
-    natureza: ['Árvore', 'Montanha', 'Rio', 'Oceano', 'Floresta']
+    natureza: ['Árvore', 'Montanha', 'Rio', 'Oceano', 'Floresta'],
+    bebida: ['Água', 'Café', 'Refrigerante', 'Suco', 'Chá'],
+    clima: ['Soleado', 'Chuvoso', 'Nublado', 'Neve', 'Vento'],
+    música: ['Rock', 'Pop', 'Jazz', 'Clássica', 'Eletrônica'],
+    transporte: ['Ônibus', 'Trem', 'Avião', 'Barco', 'Bicicleta'],
+    emoção: ['Alegria', 'Tristeza', 'Raiva', 'Medo', 'Surpresa'],
+    cozinha: ['Faca', 'Panela', 'Forno', 'Fogão', 'Micro-ondas'],
+    planta: ['Flor', 'Árvore', 'Cacto', 'Grama', 'Horta'],
+    literatura: ['Romance', 'Poesia', 'Drama', 'Aventura', 'Biografia'],
+    espaço: ['Estrela', 'Planeta', 'Galáxia', 'Asteróide', 'Cometa'],
+    vestuário: ['Camisa', 'Calça', 'Vestido', 'Casaco', 'Sapato']
 };
